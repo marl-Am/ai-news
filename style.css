@@ -1,0 +1,141 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.small {
+    font-size: .875em;
+    display: block;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: .5rem;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.top-menu {
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.top-menu ul {
+    justify-content: center;
+    display: flex;
+}
+
+.top-menu a {
+    padding-bottom: 1px;
+}
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    gap: 8px;
+}
+
+
+.day-mode {
+    background-color: white;
+    color: black;
+}
+
+
+.night-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Specific rules for navbar links in day and night modes */
+.navbar.day-mode a {
+    color: black;
+}
+
+.navbar.night-mode a {
+    color: white;
+}
+
+a {
+    color: inherit;
+}
+
+/*  */
+#toggle-btn {
+    background-color: inherit;
+}
+
+/*  */
+.day-mode .social-media-icon,
+.night-mode .social-media-icon {
+    background-color: transparent;
+}
+
+/* youtubers */
+ul.d-flex.justify-content-between {
+    flex-wrap: wrap;
+    /* Allows the items to wrap to the next line */
+    display: flex;
+    /* Sets the display as flex */
+}
+
+ul.d-flex.justify-content-between li {
+    flex: 1 1 calc(33.33% - 20px);
+    /* Adjusts the size of each item */
+    margin: 10px;
+    /* Gives space between items */
+}
+
+@media only screen and (max-width: 768px) {
+    ul.d-flex.justify-content-between li {
+        flex: 1 1 calc(50% - 20px);
+        /* Sets each item to take half the width of the container on smaller screens */
+    }
+}
+
+
+
+/* Apply yellow underline to links on hover, except in the navbar */
+a:hover:not(.navbar a) .content {
+    text-decoration: underline yellow !important;
+}
+
+
+#accordionFlushExample, #accordion-item, #accordion-header, #accordion-button, #flush-collapseOne, #flush-collapseTwo, #flush-collapseThree, #flush-collapseFour, #accordion-body {
+    background-color: inherit;
+    color: inherit;
+}
